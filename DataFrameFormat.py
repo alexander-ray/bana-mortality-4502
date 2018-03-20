@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[5]:
+# In[6]:
 
 
 import numpy as np
@@ -23,9 +23,10 @@ for file in all_files:
     file_list.append(dfInterest) #add the new dataframe to the list
 
 dataframe = pd.concat(file_list) #concat the whole list to the final dataframe
-dataframe.drop('39_cause_recode',1)
+finaldf = dataframe.drop(columns=['39_cause_recode'])
 
-dataframe.head()
+finaldf.to_csv('MortalityCondensed.csv')
+finaldf.head()
 
 #File loading method stack overflow link: https://stackoverflow.com/questions/20906474/import-multiple-csv-files-into-pandas-and-concatenate-into-one-dataframe
 #All dataframe methods learned from pandas documentation
