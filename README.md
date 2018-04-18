@@ -3,6 +3,7 @@
 **Data Mining 4502 Final Project**
 
 **Team Members:** Alex Ray, Bryan Brent, Austin Pearman, Nathan Lile
+
 **Description:**
 <p>This project serves to provide a better understanding of mortality, particularly with respect to the interrelationships between day-of-death and historical features such as race, sex, date, age, education, and circumstance of death in the United States from 2005 to 2015. The US Centers for Disease Control and Prevention releases extensive mortality data every year to allow for a variety of census analyses for life expectancy and death statistics, among other uses.
 
@@ -26,5 +27,5 @@ ___
 **Final Project Paper:**
 TBD
 ___
-###### This project used the following dataset from provided by the CDC: https://www.kaggle.com/cdc/mortality/data
+###### This project used the following dataset provided by the CDC: https://www.kaggle.com/cdc/mortality/data
 
