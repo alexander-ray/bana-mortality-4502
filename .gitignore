@@ -1,7 +1,7 @@
 *.csv
 mortality/*
 plots/*
-update_plots/*
+updated_plots/*
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
