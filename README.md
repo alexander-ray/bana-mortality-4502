@@ -1,9 +1,9 @@
 # Bana Mortality -- Data Mining 4502 Final Project
 
-## Team Members:
+## Team Members
 ### Alex Ray, Bryan Brent, Austin Pearman, Nathan Lile
 
-## Description:
+## Description
 <em>Abbreviated version of abstract.</em>
 
 The goal of this project is to investigate mortality data from the CDC using a variety of classification and clustering methods, primarily decision trees. This analysis will primarily be focused on features of the deceased such as age, race, sex, month of death, and education level.
