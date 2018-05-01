@@ -14,7 +14,21 @@ Finally, we look into an unsupervised learning analysis using K-means. While thi
 
 ## Summary of Questions and Answers
 <em>Conglomeration from final presentation and paper.</em>
+<em>Given the mortality dataset:</em>
+### Question 1
+What is the effect of target class choice and number of target classes when attempting to predict manner of death?
+### Answer 1
+The effect is substantial, with classes such as homicide and suicide having significantly better performance using decision trees and random forests than other classes such as "accident". We hypothesize this is due to the presence of more useful, important features for these classes than other classes. Note that our multiclass analysis focuses on the One vs Rest approach, which is essentially agnostic to the number of target classes.
 
+### Question 2
+How can feature importances from decision trees and random forests be used as analytic tools?
+### Answer 2
+Feature importances from decision trees and random forests provide great insight into the performance of classifiers, context on the nature of the data, ideas and background for future research questions, and also significantly contribute to knowledge gained and the application of that knowledge. 
+  
+### Question 3
+What interesting results can be gained from a clustering analysis?
+### Answer 3
+We were unable to achieve significant meaningful results from a cluster analysis with K-means. We assert that this is, in part, due to our one-hot encoding in the preprocessing for the classification analyses as well as the general lack of variety in features between instances. Furthermore, future work may be able to leverage additional features or non-distance based clustering methods such as DBSCAN.
 
 ## Applications of Knowledge
 <em>Summary from final paper.</em>
