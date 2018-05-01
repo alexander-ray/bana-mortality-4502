@@ -1,6 +1,4 @@
-# Bana Mortality
-
-# Data Mining 4502 Final Project
+# Bana Mortality -- Data Mining 4502 Final Project
 
 ## Team Members:
 ### Alex Ray, Bryan Brent, Austin Pearman, Nathan Lile
@@ -14,8 +12,17 @@ We use decision trees to perform a binary classification to predict whether or n
 
 Finally, we look into an unsupervised learning analysis using K-means. While this did not provide us with much information or insight, we present potential future avenues of work to further investigate unsupervised learning in the context of mortality data.
 
-___
-**Refrences:**
+## Summary of Questions and Answers
+
+## Applications of Knowledge
+
+## Link to Video
+[Video found here](23_AnalysisOfDeathInTheUS_Part5.swf)
+
+## Link to Final Report
+[Final report found here NOT CURRENTLY UP](23_AnalysisOfDeathInTheUS_Part5.swf)
+
+## References
 [1] [n. d.]. ROC Curve Example Scikit-learn. ([n. d.]). Retrieved April 8, 2018
 from http://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html#
 sphx-glr-auto-examples-model-selection-plot-roc-py
