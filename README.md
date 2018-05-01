@@ -634,7 +634,7 @@ race identifier with respect to victims of homicide.
 </p>
 ___
 **Application of Learned Knowledge:**
-While we have been unable to provide strong evidence or mean-
+<p>While we have been unable to provide strong evidence or mean-
 ingful correlation between the features we explored and cause of
 death, our finding do suggest strong feature importance of age in
 both suicide and homicide, with the addition of race scoring high
@@ -655,7 +655,7 @@ United States, this information should be more widely publicized
 throughout general media. Secondly, individuals in positions of
 trust, parents, teachers, caretakers and legal guardians, should be
 made aware of the seeming importance age plays with respect to
-suicide related deaths.[7]
+suicide related deaths.[7]</p>
 
 ___
 **Refrences:**
