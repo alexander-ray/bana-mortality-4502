@@ -4,7 +4,7 @@
 ### Alex Ray, Bryan Brent, Austin Pearman, Nathan Lile
 
 ## Description:
-### (Abbreviated version of abstract from final paper)
+<em>Abbreviated version of abstract.</em>
 
 The goal of this project is to investigate mortality data from the CDC using a variety of classification and clustering methods, primarily decision trees. This analysis will primarily be focused on features of the deceased such as age, race, sex, month of death, and education level.
 
@@ -13,8 +13,23 @@ We use decision trees to perform a binary classification to predict whether or n
 Finally, we look into an unsupervised learning analysis using K-means. While this did not provide us with much information or insight, we present potential future avenues of work to further investigate unsupervised learning in the context of mortality data.
 
 ## Summary of Questions and Answers
+<em>Conglomeration from final presentation and paper.</em>
+
 
 ## Applications of Knowledge
+<em>Summary from final paper.</em>
+1. Contribution to existing literature
+
+   Our work, particularly binary suicide vs non-suicide and homicide vs non-homicide provides additional context and validation to existing social research and intuition surrounding these causes of mortality. Corroboration and exploration of existing work is an important and necessary part of academic advancement.
+2. Proof of Concept for Social Work Applications
+
+   This binary classification work, due to its relative success, can be viewed as a proof of concept for similar models integrated into social programs. These programs could use a similar model with additional contextual features to provide important resource and outreach targeting for at-risk groups. As is noted in the paper, this application would require extensive work from domain experts to ensure safety and privacy of groups in question.
+3. Data Preprocessing Tool
+
+   Our multiclass classification tool can be used as a basis for future work in the area of predicting manner of death from attributes of the deceased. Future work may be able to leverage this into a preprocessing tool for the CDC dataset; as mentioned in the paper, there were millions of instances without listed manner of deaths that were discarded so this model could be a suitable method for predicting manner of death. This would allow manner of death to be used as a feature in future analyses.
+4. Demographic Risk Publicization
+
+   Connecting back to the contribution to existing literature, this work and particularly the insights gained from feature importances can be used as additional resources to help publicize the existence and importance of acknowledging groups at risk of certain negative outcomes (such as suicide or homicide).
 
 ## Link to Video
 [Video found here](23_AnalysisOfDeathInTheUS_Part5.swf)
@@ -23,30 +38,24 @@ Finally, we look into an unsupervised learning analysis using K-means. While thi
 [Final report found here NOT CURRENTLY UP](23_AnalysisOfDeathInTheUS_Part5.swf)
 
 ## References
-[1] [n. d.]. ROC Curve Example Scikit-learn. ([n. d.]). Retrieved April 8, 2018
-from http://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html#
-sphx-glr-auto-examples-model-selection-plot-roc-py
-[2] 2013. Receiver Operating Characteristic (ROC) Curve Analysis for Medical
-Diagnostic Test Evaluation. (2013). Retrieved March 27, 2018 from https:
-//www.ncbi.nlm.nih.gov/pmc/articles/PMC3755824/
-[3] 2015. NVSS - Mortality Data. (2015). Retrieved March 2, 2018 from https:
-//www.cdc.gov/nchs/nvss/deaths.htm
-[4] 2016. Suicide Rates by age, USA 2000 to 2016. (2016). Retrieved March 22, 2018
-from https://www.sprc.org/scope/age/
-[5] 2017. Mortality Trends in the United States, 1900-2015. (2017). Retrieved March
-5, 2018 from https://www.cdc.gov/nchs/data-visualization/mortality-trends/
-[6] 2018. Death in the United States. (2018). Retrieved March 5, 2018 from https:
-//www.kaggle.com/cdc/mortality/kernels
-[7] Bureau of Justice Statistics 2008. Homicide Trends in the United States, 1980-2008.
-(2008). Retrieved March 22, 2018 from https://www.bjs.gov/content/pub/pdf/
-htus8008/
-[8] W. Paoin. 2011. Lessons Learned from Data Mining of WHO Mortality Database.
-Methods of Information in Medicine 50, 4 (jun 2011), 380–385. https://doi.org/10.
-3414/me10-02-0019
-[9] M. H. Saraee, Z. Ehghaghi, H. Meamarzadeh, and B. Zibanezhad. 2008. Applying
-data mining in medical data with focus on mortality related to accident in children.
-In 2008 IEEE International Multitopic Conference. 160–164. https://doi.org/10.1109/
-INMIC.2008.4777728
+1. [n. d.]. ROC Curve Example Scikit-learn. ([n. d.]). Retrieved April 8, 2018 from http://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html#sphx-glr-auto-examples-model-selection-plot-roc-py
+
+2. 2013. Receiver Operating Characteristic (ROC) Curve Analysis for Medical
+Diagnostic Test Evaluation. (2013). Retrieved March 27, 2018 from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3755824/
+
+3. 2015. NVSS - Mortality Data. (2015). Retrieved March 2, 2018 from https://www.cdc.gov/nchs/nvss/deaths.htm
+
+4. 2016. Suicide Rates by age, USA 2000 to 2016. (2016). Retrieved March 22, 2018 from https://www.sprc.org/scope/age/
+
+5. 2017. Mortality Trends in the United States, 1900-2015. (2017). Retrieved March 5, 2018 from https://www.cdc.gov/nchs/data-visualization/mortality-trends/
+
+6. 2018. Death in the United States. (2018). Retrieved March 5, 2018 from https://www.kaggle.com/cdc/mortality/kernels
+
+7. Bureau of Justice Statistics 2008. Homicide Trends in the United States, 1980-2008. (2008). Retrieved March 22, 2018 from https://www.bjs.gov/content/pub/pdf/htus8008/
+
+8. W. Paoin. 2011. Lessons Learned from Data Mining of WHO Mortality Database. Methods of Information in Medicine 50, 4 (jun 2011), 380–385. https://doi.org/10.3414/me10-02-0019
+
+9. M. H. Saraee, Z. Ehghaghi, H. Meamarzadeh, and B. Zibanezhad. 2008. Applying data mining in medical data with focus on mortality related to accident in children. In 2008 IEEE International Multitopic Conference. 160–164. https://doi.org/10.1109/INMIC.2008.4777728
 
 ###### This project used the following dataset provided by the CDC: https://www.kaggle.com/cdc/mortality/data
 
