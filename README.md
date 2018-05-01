@@ -49,7 +49,7 @@ We were unable to achieve significant meaningful results from a cluster analysis
 [Video found here](23_AnalysisOfDeathInTheUS_Part5.swf)
 
 ## Link to Final Report
-[Final report found here NOT CURRENTLY UP](23_AnalysisOfDeathInTheUS_Part4.pdf)
+[Final report found here](23_AnalysisOfDeathInTheUS_Part4.pdf)
 
 ## References
 1. [n. d.]. ROC Curve Example Scikit-learn. ([n. d.]). Retrieved April 8, 2018 from http://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html#sphx-glr-auto-examples-model-selection-plot-roc-py
