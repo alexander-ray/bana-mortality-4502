@@ -633,7 +633,7 @@ respect to the victims of homicide also supporting our finding that race coded a
 race identifier with respect to victims of homicide.
 </p>
 ___
-**Application of Leanred Knolwedge:**
+**Application of Learned Knowledge:**
 While we have been unable to provide strong evidence or mean-
 ingful correlation between the features we explored and cause of
 death, our finding do suggest strong feature importance of age in
