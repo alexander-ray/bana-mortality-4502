@@ -33,6 +33,7 @@ results to existing knowledge on the demographics of suicide and
 murder and by doing so add to the general body of literature on
 the subject. Furthermore, results and feature importances can then
 be used in a number of practical applications.</p>
+
 ___
 **Summary of Questions and Answers:**
 <p>Given CDC data on mortality in the United States from 2005 to 2015,
@@ -86,7 +87,7 @@ examples of handling a variety of cleaning and preprocessing steps
 in Python, and examples of analyses with varying levels of success
 and interestingness. [6]</p>
 
-__
+___
 **Lessons learned from data mining WHO
 mortality database (Paoin W):**
 <p>Previous studies of the CDC’s mortality database have provided
@@ -110,7 +111,7 @@ by introducing algorithms beyond decision trees and naive bayes.
 Furthermore, we hope to emulate the prior success of unsupervised
 learning techniques on this sort of data.</p>
 
-__
+___
 **CDC NVSS (National Vital Statistics
 System) Publication Page:**
 <p>This is the publication page for our database. It contains a list of
@@ -120,7 +121,7 @@ our clustering and association techniques. It has provided us with
 a roadmap for what does and doesn’t work in terms of analyzing
 CDC mortality data. [3]</p>
 
-__
+___
 **Applying data mining in medical data with
 focus on mortality related to accident in
 children:**
@@ -130,7 +131,7 @@ regarding classifying mortality rate with both decision trees as well
 as Bayes’ theorem. We intend to use their methods as examples of
 possible techniques in our analysis. [9]</p>
 
-__
+___
 **DATASET:**
 <p>We will be using the CDC mortality dataset [6]. The dataset contains
 data extensive data about deaths in the United States from 2005-
@@ -161,7 +162,7 @@ with many more features included. Note that due to limited time,
 we consider dimensionality reduction techniques such as Principle
 Component Analysis (PCA) to be out of scope of this project.</p>
 
-__
+___
 **TECHNIQUES:**
 <p>Pandas. Will be utilized for all data analysis and manipu-
 lation unless need arises for more powerful tools.
@@ -187,7 +188,7 @@ cision trees.
 box and whisker plots, and histograms. Note that Pandas integrates
 Matplotlib to provide a simple plotting interface for dataframes.</p>
 
-__
+___
 **Data cleaning:**
 <p>(1) Several areas in the json files are of an incorrect syntax, es-
 sentially missing quotation marks. This will require a hands
@@ -221,7 +222,7 @@ values (’M’ and ’F’) into a single numerical binary feature
 binary_male to allow for a traditional analysis without
 extra vectorization.</p>
 
-__
+___
 **Data Preprocessing:**
 <p>(1) Identifying extraneous attributes that we can drop from the
 study before we begin analysis. Particularly for initial classi-
@@ -233,7 +234,7 @@ this were introduced in section 3.1–combining many race
 options as well as multiple recodes into four meaningful
 categories vastly simplifies the analysis.</p>
 
-__
+___
 **Suicide Binary Classification with Decision
 Trees:**
 <p>Our first classification task is to attempt to classify whether or
@@ -252,8 +253,8 @@ Note that for this analysis, only instances with a reported manner
 of death were included. Also note that even with this caveat, this
 is a relatively unbalanced binary classification task as the positive
 class (suicide) is only 17.3% of the data with reported manner of
-death.
-4.4.1 Feature Importances. To get a better "feel" for the data
+death.</p>
+<p>Feature Importances. To get a better "feel" for the data
 as well as better understand the preprocessed features, Decision
 TreeClassifier has a feature_importances_ attribute. From
 the official Scikit-learn documentation, "The importance of a fea-
@@ -266,8 +267,8 @@ binary classification problem.detail_age–the numeric age attribute–is obviou
 important feature when classifying suicide vs. non-suicide deaths.
 Furthermore, education is the next most important feature, fol-
 lowed closely by binary "black" and "male" attributes. All other
-features are significantly less important.
-4.4.2 Binary Classification Suicide vs Non-Suicide. Results from
+features are significantly less important.</p>
+<p>Binary Classification Suicide vs Non-Suicide. Results from
 classifying suicide vs non-suicide deaths using the features listed
 above are as follows. As adjusting the maximum depth (known as
 "pruning" the decision tree) is the main way to adjust overfitting
@@ -307,7 +308,7 @@ creasing the proportion of positives in the set would proportionally
 increase both the false positive and the true positive rate equally,
 this metric is more class distribution-agnostic than accuracy alone.</p>
 
-__
+___
 **Multiclass Classification with Decision
 Trees**
 <p>Having seen good performance classifying suicide vs non-suicide
@@ -363,7 +364,7 @@ Clearly, the two multiclass models both effectively assert that age
 is the most important feature when considering splitting criteria
 for manner of death.</p>
 
-__
+___
 **Homicide and Decision Trees:**
 <p>An interesting note from both of the multiclass ROC curves is
 the relative performance of the "Homicide" class against all others.
@@ -416,7 +417,8 @@ difficult. Recodes, while fantastic for classication, made for unvaried
 data that led to hard to interpret clusters. This was especially true
 when trying to cluster on binary variables, which often led to
 clusters with centroids that lied exactly at the 0 or 1 mark for the
-attribute in question.
+attribute in question.</p>
+<p>
 It was this challenge that led to our rationale on which attributes
 would be the most interesting to cluster on. The first obvious choice
 was age due to the fact that we had mortality data from infancy to
@@ -438,7 +440,8 @@ clustering between Age and Month of Death with three centroids:
 Our goal was to identify distinct groups in the dataset. We would
 then be able to use these groups to analyze patterns and perhaps
 draw conclusions about new objects based on which cluster they
-belong to.
+belong to.</p>
+<p>
 The above scatter plot demonstrates some of the issues we had
 while finding suitable attributes to cluster on. Ideally, we would
 see three distinct clusters, with high inter-class dissimilarity and
@@ -464,7 +467,7 @@ between our attributes, making R-squared analysis a worthwhile
 research topic.
 </p>
 
-__
+___
 **R-squared analysis:**
 <p>Due to the lack of correlation seen in scatter plots, it led to the
 assumption that the attributes in our dataset are poorly correlated.
@@ -479,8 +482,7 @@ The clustered scatter plot between the two most highly correlated
 attributes can be seen below:
 </p>
 
-__
-
+___
 **Results:**
 <p>ROC AUC Discussion: 
 	In general, our binary classifiers managed to score fairly well and
@@ -655,7 +657,7 @@ trust, parents, teachers, caretakers and legal guardians, should be
 made aware of the seeming importance age plays with respect to
 suicide related deaths.[7]
 
-__
+___
 **Refrences:**
 [1] [n. d.]. ROC Curve Example Scikit-learn. ([n. d.]). Retrieved April 8, 2018
 from http://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html#
